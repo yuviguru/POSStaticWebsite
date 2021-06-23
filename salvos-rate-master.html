@@ -1,0 +1,216 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Salvos</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/logo.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/logo.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/salvos-styles.css">
+  </head>
+  <body>
+  <div class="mdl-layout mdl-js-layout  mdl-layout--fixed-header" style="height:auto">
+  <header class="mdl-layout__header fixed-position">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title"><img src="images/logo.png" class="logo-img"></span>
+      <div class="mdl-layout-spacer"></div>
+      <nav id="main-nav" class="mdl-navigation mdl-layout--large-screen-only custom-cont pullUpDown">
+        <a class="mdl-navigation__link" href="index.html"><i class="material-icons" style="vertical-align: text-bottom;">home</i>&nbsp;&nbsp;Home</a>
+        <a class="mdl-navigation__link" href="home.html">Admin-Home</a>
+      </nav>
+    <!-- start search form -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+        <label class="mdl-button mdl-js-button mdl-button--icon" for="search-expandable">
+          <i class="material-icons">search</i>
+        </label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" id="search-expandable" />
+          <label class="mdl-textfield__label" for="search-expandable">Search text</label>
+        </div>
+      </div>
+      </div>
+    <!-- end search form -->
+    <!-- Sign in form-->
+      
+  </header>
+  <div class="mdl-layout__drawer fixed-position sal-drawer">
+            <header class="demo-drawer-header sal-drawer-header">
+                <img src="images/user.jpg" align="center" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <span class="span-mail">hello@example.com</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                        <i class="material-icons" role="presentation">arrow_drop_down</i>
+                        <span class="visuallyhidden">Accounts</span>
+                    </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                        <li class="mdl-menu__item">Edit profile</li>
+                        <li class="mdl-menu__item">Settings</li>
+                        <li class="mdl-menu__item"><i class="material-icons"></i>Sign Out</li>
+                    </ul>
+                </div>
+            </header>
+
+            <nav id="side-main-nav" class="mdl-navigation mdl-layout--small-screen-only">
+                <a class="mdl-navigation__link" href="index.html">Home</a>
+                <a class="mdl-navigation__link" href="index.html">Admin-Home</a>
+                <hr>
+            </nav>
+
+            <nav id="side-nav" class="mdl-navigation">
+                <ul class="no-list-style">
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Master<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="employee-master.html">Employee Master</a></li>
+                            <li><a class="mdl-navigation__link" href="user-master.html">User Master</a></li>
+                            <li><a class="mdl-navigation__link" href="branch-master.html">Branch Master</a></li>
+                            <li><a class="mdl-navigation__link" href="brand-master.html">Brand Master</a></li>
+                            <li><a class="mdl-navigation__link" href="client-master.html">Client Master</a></li>
+                            <li><a class="mdl-navigation__link" href="store-master.html">Store Master</a></li>
+                            <li><a class="mdl-navigation__link" href="campaign-master.html">Campaign Master</a></li>
+                            <li><a class="mdl-navigation__link" href="activity-master.html">Activity Master</a></li>
+                            <li><a class="mdl-navigation__link" href="material-master.html">Material Master</a></li>
+                            <li><a class="mdl-navigation__link" href="elements-master.html">Element Master</a></li>
+                            <li><a class="mdl-navigation__link" href="vendor-master.html">Vendor Master</a></li>
+                            <li><a class="mdl-navigation__link" href="salvos-rate-master.html">Rate Master</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Purchase Rate Master</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Campaign<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="#">Campaign Creation</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Campaign Management</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Recee Implementation</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Costing<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="#">Branding</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Fabrication</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Digital Printing</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Off-set Printing</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Trading</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Reports<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="#">Branch</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Employee</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Client</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Brand</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Activity</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Location Based Stores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+  
+  <main class="mdl-layout__content" style="margin-top:65px">
+    <div class="mdl-cell mdl-cell--12-col" style="    background: url(images/banner.png);height: 250px;background-size: cover;margin: 0px;width: 100%;"></div>
+    <div class="mdl-grid" style="margin-top:-93px;">
+      <div class="mdl-cell mdl-cell--2-col">
+        <br>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent " style="width:100%">Create</button>
+      </div>
+        <div class="mdl-shadow--4dp mdl-cell mdl-cell--8-col" align="center" style="">
+        <div class="" style="background-color:#ffffff;"><h2 align="left" style="margin:0px;padding: 15px;">Salvos Rate Master</h2></div>
+          <form action="#" style="padding: 15px;">
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--6-col" align="center">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Elements</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Code</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Rate/Unit</label>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col" align="center">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Specification</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Units</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">VAT %</label>
+                </div>
+              </div>
+              <div class="mdl-grid" align="center" style="width:100%">
+              <div class="mdl-cell mdl-cell--3-col" align="center"></div>
+               <div class="mdl-cell mdl-cell--3-col" align="center">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent " style="width:100%">Submit</button>
+                </div>
+                 <div class="mdl-cell mdl-cell--3-col" align="center">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="width:100%">Clear</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      <div class="mdl-cell mdl-cell--2-col"><br>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent " style="width:100%">Modify</button>
+      </div>
+      </div>
+  </main>
+</div>
+      
+    <script src="js/material.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/custom-salvos.js"></script>
+
+  </body>
+</html>

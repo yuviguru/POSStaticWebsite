@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Salvos</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/logo.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/logo.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/logo.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/salvos-styles.css">
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout  mdl-layout--fixed-header" style="height:auto">
+        <header class="mdl-layout__header fixed-position">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title"><img src="images/logo.png" class="logo-img"></span>
+                <div class="mdl-layout-spacer"></div>
+                <nav id="main-nav" class="mdl-navigation mdl-layout--large-screen-only custom-cont pullUpDown">
+                    <a class="mdl-navigation__link" href="index.html"><i class="material-icons" style="vertical-align: text-bottom;">home</i>&nbsp;&nbsp;Home</a>
+                    <a class="mdl-navigation__link" href="home.html">Admin-Home</a>
+                </nav>
+                <!-- start search form -->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-expandable">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-expandable" />
+                        <label class="mdl-textfield__label" for="search-expandable">Search text</label>
+                    </div>
+                </div>
+            </div>
+            <!-- end search form -->
+            <!-- Sign in form-->
+        </header>
+        <div class="mdl-layout__drawer fixed-position sal-drawer">
+            <header class="demo-drawer-header sal-drawer-header">
+                <img src="images/user.jpg" align="center" class="demo-avatar">
+                <div class="demo-avatar-dropdown">
+                    <span class="span-mail">hello@example.com</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                        <i class="material-icons" role="presentation">arrow_drop_down</i>
+                        <span class="visuallyhidden">Accounts</span>
+                    </button>
+                    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+                        <li class="mdl-menu__item">Edit profile</li>
+                        <li class="mdl-menu__item">Settings</li>
+                        <li class="mdl-menu__item"><i class="material-icons"></i>Sign Out</li>
+                    </ul>
+                </div>
+            </header>
+
+            <nav id="side-main-nav" class="mdl-navigation mdl-layout--small-screen-only">
+                <a class="mdl-navigation__link" href="index.html">Home</a>
+                <a class="mdl-navigation__link" href="index.html">Admin-Home</a>
+                <hr>
+            </nav>
+
+            <nav id="side-nav" class="mdl-navigation">
+                <ul class="no-list-style">
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Master<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="employee-master.html">Employee Master</a></li>
+                            <li><a class="mdl-navigation__link" href="user-master.html">User Master</a></li>
+                            <li><a class="mdl-navigation__link" href="branch-master.html">Branch Master</a></li>
+                            <li><a class="mdl-navigation__link" href="brand-master.html">Brand Master</a></li>
+                            <li><a class="mdl-navigation__link" href="client-master.html">Client Master</a></li>
+                            <li><a class="mdl-navigation__link" href="store-master.html">Store Master</a></li>
+                            <li><a class="mdl-navigation__link" href="campaign-master.html">Campaign Master</a></li>
+                            <li><a class="mdl-navigation__link" href="activity-master.html">Activity Master</a></li>
+                            <li><a class="mdl-navigation__link" href="material-master.html">Material Master</a></li>
+                            <li><a class="mdl-navigation__link" href="elements-master.html">Element Master</a></li>
+                            <li><a class="mdl-navigation__link" href="vendor-master.html">Vendor Master</a></li>
+                            <li><a class="mdl-navigation__link" href="salvos-rate-master.html">Rate Master</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Purchase Rate Master</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Campaign<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="#">Campaign Creation</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Campaign Management</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Recee Implementation</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Costing<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="#">Branding</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Fabrication</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Digital Printing</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Off-set Printing</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Trading</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Others</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="mdl-navigation__link hide" data-toggle="#list">Reports<i class="material-icons rotate">arrow_drop_down</i></a>
+                        <ul class="out no-list-style" id="list">
+                            <li><a class="mdl-navigation__link" href="#">Branch</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Employee</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Client</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Brand</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Activity</a></li>
+                            <li><a class="mdl-navigation__link" href="#">Location Based Stores</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <a href="#" id="sign-in" class="mdl-button mdl-js-button mdl-button--raised  mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">Sign-in</a>
+
+        <main class="mdl-layout__content body-margin" style="margin-top: 64px;">
+            <div class="mdl-grid" style="padding: 0;">
+                <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 250px; overflow: hidden; visibility: hidden;">
+                    <!-- Loading Screen -->
+                    <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                        <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+                        <div style="position:absolute;display:block;background:url('images/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                    </div>
+                    <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+                        <div data-p="225.00" style="display: none;">
+                            <img data-u="image" src="images/slide1.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide2.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide3.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide4.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide5.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide6.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide7.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide8.png" />
+                        </div>
+                        <div data-p="225.00" data-po="80% 55%" style="display: none;">
+                            <img data-u="image" src="images/slide9.png" />
+                        </div>
+                    </div>
+                    <!-- Bullet Navigator -->
+                    <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+                        <!-- bullet navigator item prototype -->
+                        <div data-u="prototype" style="width:16px;height:16px;"></div>
+                    </div>
+                    <!-- Arrow Navigator -->
+                    <span data-u="arrowleft" class="jssora22l" style="top:0px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+                    <span data-u="arrowright" class="jssora22r" style="top:0px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+                </div>
+                <!-- #endregion Jssor Slider End -->
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                    <div class="mdl-tabs__tab-bar main-tab-link">
+                        <a href="#Home-panel" class="mdl-tabs__tab is-active">Home</a>
+                        <a href="#About-panel" class="mdl-tabs__tab">About Us</a>
+                        <a href="#Career-panel" class="mdl-tabs__tab">Career</a>
+                        <a href="#Contact-panel" class="mdl-tabs__tab">Contact us</a>
+                    </div>
+
+                    <div class="panel-tab-link">
+                        <div class="mdl-tabs__panel is-active" id="Home-panel">
+                            <h4 align="center">ACTIVITIES</h4>
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--2-offset-desktop mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__title theme-back-color">
+                                        <h2 class="mdl-card__title-text mdl-color-text--white">ON-SCREEN</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <ul>
+                                            <li>Film Production / Striking of Additional Prints</li>
+                                            <li>Obtaining Censor approval</li>
+                                            <li>Conversion from BETA to 35mm / Digital Format </li>
+                                            <li>Screening Execution across India</li>
+                                            <li>Airing of Audio Jingles in Cinema halls</li>
+                                            <li>Effective Monitoring of Screening through its renowned network</li>
+                                            <li>Liaising with Clients RO/AO/Depot during campaign</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent know-more">Know more</a>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__title theme-back-color">
+                                        <h2 class="mdl-card__title-text mdl-color-text--white">OFF–SCREEN</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <ul>
+                                            <li>Display of Hoarding / Glow Sign Boards</li>
+                                            <li>Display of Welcome Arches / Exit Arches</li>
+                                            <li>Display of Banners / Posters / Streamers</li>
+                                            <li>Erection of Kiosk’s during weekends / Special Occasions</li>
+                                            <li>Distribution of Pamphlets / Broachers on weekends / Special Occasions</li>
+                                            <li>Product Display in Cinema Halls</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent know-more">Know more</a>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-cell--2-offset-desktop mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__title theme-back-color">
+                                        <h2 class="mdl-card__title-text mdl-color-text--white">BRANDING & PROMOTIONS</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <ul>
+                                            <li>Erection of Dealer Boards in Retail Outlets </li>
+                                            <li>Shop Branding / Display of Brand Cut-out </li>
+                                            <li>Erection of Temp Hoarding in specific locations</li>
+                                            <li>Display of Welcome Arches / Exit Arches</li>
+                                            <li>Display of Banners / Posters / Streamers</li>
+                                            <li>Erection of Sales Counter / Stall </li>
+                                            <li>Special Promotions for product launch</li>
+                                            <li>Product Display in Malls / Retail Outlets etc</li>
+                                            <li>Distribution of Pamphlets / Broachers in Retail Outlets</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent know-more">Know more</a>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__title theme-back-color">
+                                        <h2 class="mdl-card__title-text mdl-color-text--white">DIGITAL PRINTING</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <ul>
+                                            <li>Solvent -Flex / Star Flex / Vinyl</li>
+                                            <li>Eco Solvent -Flex / Star Flex / Vinyl </li>
+                                            <li>One Way Vision / Mesh Vinyl</li>
+                                            <li>Sun Board / Sun Pack</li>
+                                            <li>Standee / Roller Stands</li>
+                                            <li>Front Lit / Back lit Boards</li>
+                                            <li>Flex Drops & Display stands</li>
+                                            <li>Acrylic Boards & Neon Signs</li>
+                                            <li>Polycarbonate Boards & ACP Boards</li>
+                                        </ul>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent know-more">Know more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="About-panel">
+                            <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-card mdl-shadow--4dp">
+                                <div class="mdl-card__media theme-back-color" align="center" style="padding:10px;">
+                                    <img class="article-image" src=" images/logo.png" border="0" alt="">
+                                </div>
+
+                                <div class="mdl-card__supporting-text">
+                                    <p>SALVOS, one of the largest media solution providers in India, has been greatly acknowledged for its on-screen, off-screen, branding & promotional activities.</p>
+
+                                    <p>Established in 1989 by Shri. V. Arunachalam, SALVOS is engaged in the business of screening advertisements (Films & Slides) in theatres across the country and carrying out branding & promotional activities in Andhra Pradesh, Karnataka, Kerala and Tamilnadu especially in rural markets.</p>
+
+                                    <p>SALVOS, with its own network of more than 20 branches across south india, has set high standards in service deliverables. Since establishment, SALVOS has been continuously upgrading its network to meet all requirements of its clients. SALVOS has become preferred media partners for majority of its clients.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="Career-panel">
+                            <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-card mdl-shadow--4dp">
+                                <div class="mdl-card__media theme-back-color" align="center" style="padding:10px;">
+                                    <img class="article-image" src=" images/logo.png" border="0" alt="">
+                                </div>
+
+                                <div class="mdl-card__supporting-text">
+                                    <p>As Part of SALVOS Team, you can experience personal & professional growth, challenging & exciting work plus outstanding rewards & recognition. SALVOS is ongoingly looking out for experienced and outstanding individuals who can relocate to any part of south India based on requirement.</p>
+
+                                    <p>Please mail your latest CV to careers@salvosgroup.in</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-tabs__panel" id="Contact-panel">
+                            <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--2-offset-desktop mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__title theme-back-color">
+                                        <h2 class="mdl-card__title-text mdl-color-text--white">CONTACT</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <h4>Salvos Group of Companies</h4>
+                                        <p>AR.M” House,
+                                            <br> #25, 1st Cross,
+                                            <br> Wheeler's Road, Frazer Town,
+                                            <br> Bangalore – 560 005.</p>
+                                        <p><i class="material-icons" style="vertical-align: bottom;">phone</i>&nbsp;&nbsp;&nbsp;080 25567704</p>
+                                        <p><i class="material-icons" style="vertical-align: bottom;">print</i>&nbsp;&nbsp;&nbsp;080 25545674</p>
+                                            <p><i class="material-icons" style="vertical-align: bottom;">mail_outline</i>&nbsp;&nbsp;&nbsp;info@salvosgroup.in</p>
+                                    </div>
+                                </div>
+                                <div class="mdl-cell mdl-card mdl-shadow--4dp">
+                                    <div class="mdl-card__title theme-back-color">
+                                        <h2 class="mdl-card__title-text mdl-color-text--white">ENQUIRY</h2>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Name</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Company Name</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Address</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Telephone (with STD)</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Mobile</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Fax</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Mail ID</label>
+                                        </div>
+                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                            <input class="mdl-textfield__input" type="text" id="sample3">
+                                            <label class="mdl-textfield__label" for="sample3">Required Activities</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+        </div>
+
+        <script src="js/material.min.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
+        <script type="text/javascript" src="js/custom-salvos.js"></script>
+
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
